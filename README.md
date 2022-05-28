@@ -1,5 +1,6 @@
 ### SCEC-SOURCES-Rena Wu, Yongfei Wang & Christine Goulet
 This is a working directory for a SCEC SOURCES internship
+---
 
 ## Title
 A Performance-portable Implementation of Earthquake Dynamic Rupture Simulation Targeting Upcoming Future High-Performance Computers
@@ -21,4 +22,8 @@ In this project, we propose to reorganize a computationally intensive kernel in 
 ## Working [slack](https://scecsources.slack.com)
 
 ---
-Markdown basic syntax [link](https://www.markdownguide.org/basic-syntax/)
+Useful links
+
+## Markdown:
+* [basic syntax](https://www.markdownguide.org/basic-syntax/)
+* [latex in markdown](https://ashki23.github.io/markdown-latex.html)
