@@ -1,0 +1,1 @@
+cmake .. -D CMAKE_PREFIX_PATH=/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/build/install:/Users/yongfeiwang/software/kokkos/build/kokkos-install

@@ -1,0 +1,14 @@
+/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/examples/build/CMakeFiles/rebuild_cache.dir
+/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/examples/build/CMakeFiles/edit_cache.dir
+/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/examples/build/01-axpy-ndarray/CMakeFiles/rebuild_cache.dir
+/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/examples/build/01-axpy-ndarray/CMakeFiles/edit_cache.dir
+/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/examples/build/01-axpy-ndarray/CMakeFiles/example-axpy-ndarray.dir
+/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/examples/build/02-axpy-dualview/CMakeFiles/rebuild_cache.dir
+/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/examples/build/02-axpy-dualview/CMakeFiles/edit_cache.dir
+/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/examples/build/02-axpy-dualview/CMakeFiles/example-axpy-dualview.dir
+/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/examples/build/03-axpy-view/CMakeFiles/rebuild_cache.dir
+/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/examples/build/03-axpy-view/CMakeFiles/edit_cache.dir
+/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/examples/build/03-axpy-view/CMakeFiles/example-axpy-view.dir
+/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/examples/build/04-complex-ndarray/CMakeFiles/rebuild_cache.dir
+/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/examples/build/04-complex-ndarray/CMakeFiles/edit_cache.dir
+/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/examples/build/04-complex-ndarray/CMakeFiles/example-complex-ndarray.dir

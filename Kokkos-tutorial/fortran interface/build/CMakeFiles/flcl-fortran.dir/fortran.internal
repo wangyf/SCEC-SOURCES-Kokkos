@@ -1,0 +1,9 @@
+# The fortran modules provided by this target.
+provides
+ flcl_dualview_mod.mod
+ flcl_mod.mod
+ flcl_ndarray_mod.mod
+ flcl_types_f_mod.mod
+ flcl_util_kokkos_mod.mod
+ flcl_util_strings_mod.mod
+ flcl_view_mod.mod

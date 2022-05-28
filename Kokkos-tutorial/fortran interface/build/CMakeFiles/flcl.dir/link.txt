@@ -1,0 +1,2 @@
+/opt/local/bin/ar qc libflcl.a CMakeFiles/flcl-fortran.dir/src/flcl-types-f.f90.o CMakeFiles/flcl-fortran.dir/src/flcl-ndarray-f.f90.o CMakeFiles/flcl-fortran.dir/src/flcl-view-f.f90.o CMakeFiles/flcl-fortran.dir/src/flcl-dualview-f.f90.o CMakeFiles/flcl-fortran.dir/src/flcl-util-strings-f.f90.o CMakeFiles/flcl-fortran.dir/src/flcl-f.f90.o CMakeFiles/flcl-fortran.dir/src/flcl-util-kokkos-f.f90.o CMakeFiles/flcl-cxx.dir/src/flcl-cxx.cpp.o CMakeFiles/flcl-cxx.dir/src/flcl-util-cxx.cpp.o
+/opt/local/bin/ranlib libflcl.a

@@ -1,0 +1,747 @@
+The system is: Darwin - 20.6.0 - x86_64
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" succeeded.
+Compiler: /opt/local/bin/gfortran 
+Build flags: 
+Id flags: -v 
+
+The output was:
+0
+Driving: /opt/local/bin/gfortran -v CMakeFortranCompilerId.F -mmacosx-version-min=11.5.0 -asm_macosx_version_min=11.5 -l gfortran -shared-libgcc
+Using built-in specs.
+COLLECT_GCC=/opt/local/bin/gfortran
+COLLECT_LTO_WRAPPER=/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/lto-wrapper
+Target: x86_64-apple-darwin20
+Configured with: /opt/local/var/macports/build/_opt_bblocal_var_buildworker_ports_build_ports_lang_gcc10/gcc10/work/gcc-10.3.0/configure --prefix=/opt/local --build=x86_64-apple-darwin20 --enable-languages=c,c++,objc,obj-c++,lto,fortran,jit --libdir=/opt/local/lib/gcc10 --includedir=/opt/local/include/gcc10 --infodir=/opt/local/share/info --mandir=/opt/local/share/man --datarootdir=/opt/local/share/gcc-10 --with-local-prefix=/opt/local --with-system-zlib --disable-nls --program-suffix=-mp-10 --with-gxx-include-dir=/opt/local/include/gcc10/c++/ --with-gmp=/opt/local --with-mpfr=/opt/local --with-mpc=/opt/local --with-isl=/opt/local --enable-stage1-checking --disable-multilib --enable-lto --enable-libstdcxx-time --with-build-config=bootstrap-debug --with-as=/opt/local/bin/as --with-ld=/opt/local/bin/ld --with-ar=/opt/local/bin/ar --with-bugurl=https://trac.macports.org/newticket --enable-host-shared --disable-tls --with-pkgversion='MacPorts gcc10 10.3.0_0' --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.3.0 (MacPorts gcc10 10.3.0_0) 
+COLLECT_GCC_OPTIONS='-v' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-shared-libgcc' '-mtune=core2'
+ /opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/f951 CMakeFortranCompilerId.F -ffixed-form -cpp=/var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//ccJtxo17.f90 -quiet -v -D__DYNAMIC__ CMakeFortranCompilerId.F -fPIC -quiet -dumpbase CMakeFortranCompilerId.F -mmacosx-version-min=11.5.0 -mtune=core2 -auxbase CMakeFortranCompilerId -version -fintrinsic-modules-path /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/finclude -o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//ccnIh5ka.s
+GNU Fortran (MacPorts gcc10 10.3.0_0) version 10.3.0 (x86_64-apple-darwin20)
+	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/opt/local/include"
+ignoring nonexistent directory "/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../../../x86_64-apple-darwin20/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/finclude
+ /Users/yongfeiwang/include
+ .
+ /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include
+ /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include-fixed
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+End of search list.
+GNU Fortran2008 (MacPorts gcc10 10.3.0_0) version 10.3.0 (x86_64-apple-darwin20)
+	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-mmacosx-version-min=11.5.0'  '-shared-libgcc' '-mtune=core2'
+ /opt/local/bin/as -arch x86_64 -v -force_cpusubtype_ALL -mmacosx-version-min=11.5 -o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//cctzrff3.o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//ccnIh5ka.s
+Apple clang version 13.0.0 (clang-1300.0.29.3)
+Target: x86_64-apple-darwin20.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1as -triple x86_64-apple-macosx11.5.0 -filetype obj -main-file-name ccnIh5ka.s -target-cpu penryn -fdebug-compilation-dir /Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/build/CMakeFiles/3.21.3/CompilerIdFortran -dwarf-debug-producer "Apple clang version 13.0.0 (clang-1300.0.29.3)" -dwarf-version=4 -mrelocation-model pic --mrelax-relocations -mllvm -disable-aligned-alloc-awareness=1 -mllvm -enable-dse-memoryssa=0 -o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//cctzrff3.o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//ccnIh5ka.s
+Reading specs from /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../libgfortran.spec
+rename spec lib to liborig
+COLLECT_GCC_OPTIONS='-v' '-mmacosx-version-min=11.5.0'  '-shared-libgcc' '-mtune=core2'
+COMPILER_PATH=/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/
+LIBRARY_PATH=/Users/yongfeiwang/lib/:./:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-mmacosx-version-min=11.5.0'  '-shared-libgcc' '-mtune=core2'
+ /opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/collect2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/ -dynamic -arch x86_64 -macosx_version_min 11.5.0 -weak_reference_mismatches non-weak -o a.out -L/Users/yongfeiwang/lib -L. -L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0 -L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../.. /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//cctzrff3.o -lgfortran -lSystem -lgcc_ext.10.5 -lgcc -lquadmath -lm -lgcc_ext.10.5 -lgcc -lSystem -no_compact_unwind -v
+collect2 version 10.3.0
+/opt/local/bin/ld -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/ -dynamic -arch x86_64 -macosx_version_min 11.5.0 -weak_reference_mismatches non-weak -o a.out -L/Users/yongfeiwang/lib -L. -L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0 -L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../.. /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//cctzrff3.o -lgfortran -lSystem -lgcc_ext.10.5 -lgcc -lquadmath -lm -lgcc_ext.10.5 -lgcc -lSystem -no_compact_unwind -v
+@(#)PROGRAM:ld  PROJECT:ld64-711
+BUILD 14:59:24 Aug 21 2021
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/Users/yongfeiwang/lib
+	.
+	/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0
+	/opt/local/lib/gcc10
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/
+
+
+Compilation of the Fortran compiler identification source "CMakeFortranCompilerId.F" produced "a.out"
+
+The Fortran compiler identification is GNU, found in "/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/build/CMakeFiles/3.21.3/CompilerIdFortran/a.out"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /opt/local/bin/gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/build/CMakeFiles/3.21.3/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /opt/local/bin/g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/build/CMakeFiles/3.21.3/CompilerIdCXX/a.out"
+
+Detecting Fortran compiler ABI info compiled with the following output:
+Change Dir: /Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3b09f/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_3b09f.dir/build.make CMakeFiles/cmTC_3b09f.dir/build
+Building Fortran object CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o
+/opt/local/bin/gfortran   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk   -v -Wl,-v -c /opt/local/share/cmake-3.21/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o
+Using built-in specs.
+COLLECT_GCC=/opt/local/bin/gfortran
+Target: x86_64-apple-darwin20
+Configured with: /opt/local/var/macports/build/_opt_bblocal_var_buildworker_ports_build_ports_lang_gcc10/gcc10/work/gcc-10.3.0/configure --prefix=/opt/local --build=x86_64-apple-darwin20 --enable-languages=c,c++,objc,obj-c++,lto,fortran,jit --libdir=/opt/local/lib/gcc10 --includedir=/opt/local/include/gcc10 --infodir=/opt/local/share/info --mandir=/opt/local/share/man --datarootdir=/opt/local/share/gcc-10 --with-local-prefix=/opt/local --with-system-zlib --disable-nls --program-suffix=-mp-10 --with-gxx-include-dir=/opt/local/include/gcc10/c++/ --with-gmp=/opt/local --with-mpfr=/opt/local --with-mpc=/opt/local --with-isl=/opt/local --enable-stage1-checking --disable-multilib --enable-lto --enable-libstdcxx-time --with-build-config=bootstrap-debug --with-as=/opt/local/bin/as --with-ld=/opt/local/bin/ld --with-ar=/opt/local/bin/ar --with-bugurl=https://trac.macports.org/newticket --enable-host-shared --disable-tls --with-pkgversion='MacPorts gcc10 10.3.0_0' --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.3.0 (MacPorts gcc10 10.3.0_0) 
+COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-v' '-c' '-o' 'CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-mtune=core2'
+ /opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/f951 /opt/local/share/cmake-3.21/Modules/CMakeFortranCompilerABI.F -ffixed-form -cpp=/var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//cc8dAmHJ.f90 -quiet -v -D__DYNAMIC__ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk /opt/local/share/cmake-3.21/Modules/CMakeFortranCompilerABI.F -fPIC -quiet -dumpbase CMakeFortranCompilerABI.F -mmacosx-version-min=11.5.0 -mtune=core2 -auxbase-strip CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o -version -fintrinsic-modules-path /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/finclude -o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//ccvtKHtD.s
+GNU Fortran (MacPorts gcc10 10.3.0_0) version 10.3.0 (x86_64-apple-darwin20)
+	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/opt/local/include"
+ignoring nonexistent directory "/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../../../x86_64-apple-darwin20/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/finclude
+ /Users/yongfeiwang/include
+ .
+ /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include
+ /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include-fixed
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include
+End of search list.
+GNU Fortran2008 (MacPorts gcc10 10.3.0_0) version 10.3.0 (x86_64-apple-darwin20)
+	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-v' '-c' '-o' 'CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o' '-mmacosx-version-min=11.5.0'  '-mtune=core2'
+ /opt/local/bin/as -arch x86_64 -v -force_cpusubtype_ALL -mmacosx-version-min=11.5 -o CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//ccvtKHtD.s
+Apple clang version 13.0.0 (clang-1300.0.29.3)
+Target: x86_64-apple-darwin20.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1as -triple x86_64-apple-macosx11.5.0 -filetype obj -main-file-name ccvtKHtD.s -target-cpu penryn -fdebug-compilation-dir /Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/build/CMakeFiles/CMakeTmp -dwarf-debug-producer "Apple clang version 13.0.0 (clang-1300.0.29.3)" -dwarf-version=4 -mrelocation-model pic --mrelax-relocations -mllvm -disable-aligned-alloc-awareness=1 -mllvm -enable-dse-memoryssa=0 -o CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//ccvtKHtD.s
+COMPILER_PATH=/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/
+LIBRARY_PATH=/Users/yongfeiwang/lib/:./:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../
+COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-v' '-c' '-o' 'CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o' '-mmacosx-version-min=11.5.0'  '-mtune=core2'
+Linking Fortran executable cmTC_3b09f
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b09f.dir/link.txt --verbose=1
+/opt/local/bin/gfortran  -v -Wl,-v  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o -o cmTC_3b09f 
+Driving: /opt/local/bin/gfortran -v -Wl,-v -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o -o cmTC_3b09f -mmacosx-version-min=11.5.0 -asm_macosx_version_min=11.5 -l gfortran -shared-libgcc
+Using built-in specs.
+COLLECT_GCC=/opt/local/bin/gfortran
+COLLECT_LTO_WRAPPER=/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/lto-wrapper
+Target: x86_64-apple-darwin20
+Configured with: /opt/local/var/macports/build/_opt_bblocal_var_buildworker_ports_build_ports_lang_gcc10/gcc10/work/gcc-10.3.0/configure --prefix=/opt/local --build=x86_64-apple-darwin20 --enable-languages=c,c++,objc,obj-c++,lto,fortran,jit --libdir=/opt/local/lib/gcc10 --includedir=/opt/local/include/gcc10 --infodir=/opt/local/share/info --mandir=/opt/local/share/man --datarootdir=/opt/local/share/gcc-10 --with-local-prefix=/opt/local --with-system-zlib --disable-nls --program-suffix=-mp-10 --with-gxx-include-dir=/opt/local/include/gcc10/c++/ --with-gmp=/opt/local --with-mpfr=/opt/local --with-mpc=/opt/local --with-isl=/opt/local --enable-stage1-checking --disable-multilib --enable-lto --enable-libstdcxx-time --with-build-config=bootstrap-debug --with-as=/opt/local/bin/as --with-ld=/opt/local/bin/ld --with-ar=/opt/local/bin/ar --with-bugurl=https://trac.macports.org/newticket --enable-host-shared --disable-tls --with-pkgversion='MacPorts gcc10 10.3.0_0' --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.3.0 (MacPorts gcc10 10.3.0_0) 
+Reading specs from /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../libgfortran.spec
+rename spec lib to liborig
+COLLECT_GCC_OPTIONS='-v' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-o' 'cmTC_3b09f' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-shared-libgcc' '-mtune=core2'
+COMPILER_PATH=/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/
+LIBRARY_PATH=/Users/yongfeiwang/lib/:./:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-o' 'cmTC_3b09f' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-shared-libgcc' '-mtune=core2'
+ /opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/collect2 -dynamic -arch x86_64 -macosx_version_min 11.5.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -weak_reference_mismatches non-weak -o cmTC_3b09f -L/Users/yongfeiwang/lib -L. -L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0 -L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../.. -v CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o -lgfortran -lSystem -lgcc_ext.10.5 -lgcc -lquadmath -lm -lgcc_ext.10.5 -lgcc -lSystem -no_compact_unwind -v
+collect2 version 10.3.0
+/opt/local/bin/ld -dynamic -arch x86_64 -macosx_version_min 11.5.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -weak_reference_mismatches non-weak -o cmTC_3b09f -L/Users/yongfeiwang/lib -L. -L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0 -L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../.. -v CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o -lgfortran -lSystem -lgcc_ext.10.5 -lgcc -lquadmath -lm -lgcc_ext.10.5 -lgcc -lSystem -no_compact_unwind -v
+@(#)PROGRAM:ld  PROJECT:ld64-711
+BUILD 14:59:24 Aug 21 2021
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+@(#)PROGRAM:ld  PROJECT:ld64-711
+BUILD 14:59:24 Aug 21 2021
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/Users/yongfeiwang/lib
+	.
+	/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0
+	/opt/local/lib/gcc10
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib
+Framework search paths:
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/
+
+
+
+Parsed Fortran implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/finclude]
+    add: [/Users/yongfeiwang/include]
+    add: [.]
+    add: [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include]
+    add: [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include-fixed]
+    add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include]
+  end of search list found
+  collapse include dir [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/finclude] ==> [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/finclude]
+  collapse include dir [/Users/yongfeiwang/include] ==> [/Users/yongfeiwang/include]
+  skipping relative include dir [.]
+  collapse include dir [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include] ==> [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include]
+  collapse include dir [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include-fixed] ==> [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include-fixed]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include]
+  implicit include dirs: [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/finclude;/Users/yongfeiwang/include;/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include;/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include-fixed;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include]
+
+
+Parsed Fortran implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_3b09f/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_3b09f.dir/build.make CMakeFiles/cmTC_3b09f.dir/build]
+  ignore line: [Building Fortran object CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o]
+  ignore line: [/opt/local/bin/gfortran   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk   -v -Wl -v -c /opt/local/share/cmake-3.21/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/local/bin/gfortran]
+  ignore line: [Target: x86_64-apple-darwin20]
+  ignore line: [Configured with: /opt/local/var/macports/build/_opt_bblocal_var_buildworker_ports_build_ports_lang_gcc10/gcc10/work/gcc-10.3.0/configure --prefix=/opt/local --build=x86_64-apple-darwin20 --enable-languages=c,c++,objc,obj-c++,lto,fortran,jit --libdir=/opt/local/lib/gcc10 --includedir=/opt/local/include/gcc10 --infodir=/opt/local/share/info --mandir=/opt/local/share/man --datarootdir=/opt/local/share/gcc-10 --with-local-prefix=/opt/local --with-system-zlib --disable-nls --program-suffix=-mp-10 --with-gxx-include-dir=/opt/local/include/gcc10/c++/ --with-gmp=/opt/local --with-mpfr=/opt/local --with-mpc=/opt/local --with-isl=/opt/local --enable-stage1-checking --disable-multilib --enable-lto --enable-libstdcxx-time --with-build-config=bootstrap-debug --with-as=/opt/local/bin/as --with-ld=/opt/local/bin/ld --with-ar=/opt/local/bin/ar --with-bugurl=https://trac.macports.org/newticket --enable-host-shared --disable-tls --with-pkgversion='MacPorts gcc10 10.3.0_0' --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.3.0 (MacPorts gcc10 10.3.0_0) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-v' '-c' '-o' 'CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-mtune=core2']
+  ignore line: [ /opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/f951 /opt/local/share/cmake-3.21/Modules/CMakeFortranCompilerABI.F -ffixed-form -cpp=/var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//cc8dAmHJ.f90 -quiet -v -D__DYNAMIC__ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk /opt/local/share/cmake-3.21/Modules/CMakeFortranCompilerABI.F -fPIC -quiet -dumpbase CMakeFortranCompilerABI.F -mmacosx-version-min=11.5.0 -mtune=core2 -auxbase-strip CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o -version -fintrinsic-modules-path /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/finclude -o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//ccvtKHtD.s]
+  ignore line: [GNU Fortran (MacPorts gcc10 10.3.0_0) version 10.3.0 (x86_64-apple-darwin20)]
+  ignore line: [	compiled by GNU C version 10.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/opt/local/include"]
+  ignore line: [ignoring nonexistent directory "/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../../../x86_64-apple-darwin20/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/finclude]
+  ignore line: [ /Users/yongfeiwang/include]
+  ignore line: [ .]
+  ignore line: [ /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include]
+  ignore line: [ /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include-fixed]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU Fortran2008 (MacPorts gcc10 10.3.0_0) version 10.3.0 (x86_64-apple-darwin20)]
+  ignore line: [	compiled by GNU C version 10.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-v' '-c' '-o' 'CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o' '-mmacosx-version-min=11.5.0'  '-mtune=core2']
+  ignore line: [ /opt/local/bin/as -arch x86_64 -v -force_cpusubtype_ALL -mmacosx-version-min=11.5 -o CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//ccvtKHtD.s]
+  ignore line: [Apple clang version 13.0.0 (clang-1300.0.29.3)]
+  ignore line: [Target: x86_64-apple-darwin20.6.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1as -triple x86_64-apple-macosx11.5.0 -filetype obj -main-file-name ccvtKHtD.s -target-cpu penryn -fdebug-compilation-dir /Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/build/CMakeFiles/CMakeTmp -dwarf-debug-producer "Apple clang version 13.0.0 (clang-1300.0.29.3)" -dwarf-version=4 -mrelocation-model pic --mrelax-relocations -mllvm -disable-aligned-alloc-awareness=1 -mllvm -enable-dse-memoryssa=0 -o CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//ccvtKHtD.s]
+  ignore line: [COMPILER_PATH=/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/]
+  ignore line: [LIBRARY_PATH=/Users/yongfeiwang/lib/:./:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-v' '-c' '-o' 'CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o' '-mmacosx-version-min=11.5.0'  '-mtune=core2']
+  ignore line: [Linking Fortran executable cmTC_3b09f]
+  ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b09f.dir/link.txt --verbose=1]
+  ignore line: [/opt/local/bin/gfortran  -v -Wl -v  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o -o cmTC_3b09f ]
+  ignore line: [Driving: /opt/local/bin/gfortran -v -Wl -v -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o -o cmTC_3b09f -mmacosx-version-min=11.5.0 -asm_macosx_version_min=11.5 -l gfortran -shared-libgcc]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/local/bin/gfortran]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/lto-wrapper]
+  ignore line: [Target: x86_64-apple-darwin20]
+  ignore line: [Configured with: /opt/local/var/macports/build/_opt_bblocal_var_buildworker_ports_build_ports_lang_gcc10/gcc10/work/gcc-10.3.0/configure --prefix=/opt/local --build=x86_64-apple-darwin20 --enable-languages=c,c++,objc,obj-c++,lto,fortran,jit --libdir=/opt/local/lib/gcc10 --includedir=/opt/local/include/gcc10 --infodir=/opt/local/share/info --mandir=/opt/local/share/man --datarootdir=/opt/local/share/gcc-10 --with-local-prefix=/opt/local --with-system-zlib --disable-nls --program-suffix=-mp-10 --with-gxx-include-dir=/opt/local/include/gcc10/c++/ --with-gmp=/opt/local --with-mpfr=/opt/local --with-mpc=/opt/local --with-isl=/opt/local --enable-stage1-checking --disable-multilib --enable-lto --enable-libstdcxx-time --with-build-config=bootstrap-debug --with-as=/opt/local/bin/as --with-ld=/opt/local/bin/ld --with-ar=/opt/local/bin/ar --with-bugurl=https://trac.macports.org/newticket --enable-host-shared --disable-tls --with-pkgversion='MacPorts gcc10 10.3.0_0' --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.3.0 (MacPorts gcc10 10.3.0_0) ]
+  ignore line: [Reading specs from /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../libgfortran.spec]
+  ignore line: [rename spec lib to liborig]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-o' 'cmTC_3b09f' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-shared-libgcc' '-mtune=core2']
+  ignore line: [COMPILER_PATH=/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/]
+  ignore line: [LIBRARY_PATH=/Users/yongfeiwang/lib/:./:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-o' 'cmTC_3b09f' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-shared-libgcc' '-mtune=core2']
+  link line: [ /opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/collect2 -dynamic -arch x86_64 -macosx_version_min 11.5.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -weak_reference_mismatches non-weak -o cmTC_3b09f -L/Users/yongfeiwang/lib -L. -L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0 -L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../.. -v CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o -lgfortran -lSystem -lgcc_ext.10.5 -lgcc -lquadmath -lm -lgcc_ext.10.5 -lgcc -lSystem -no_compact_unwind -v]
+    arg [/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/collect2] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [11.5.0] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk] ==> ignore
+    arg [-weak_reference_mismatches] ==> ignore
+    arg [non-weak] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_3b09f] ==> ignore
+    arg [-L/Users/yongfeiwang/lib] ==> dir [/Users/yongfeiwang/lib]
+    arg [-L.] ==> ignore
+    arg [-L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0] ==> dir [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0]
+    arg [-L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../..] ==> dir [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../..]
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_3b09f.dir/CMakeFortranCompilerABI.F.o] ==> ignore
+    arg [-lgfortran] ==> lib [gfortran]
+    arg [-lSystem] ==> lib [System]
+    arg [-lgcc_ext.10.5] ==> lib [gcc_ext.10.5]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lquadmath] ==> lib [quadmath]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_ext.10.5] ==> lib [gcc_ext.10.5]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lSystem] ==> lib [System]
+    arg [-no_compact_unwind] ==> ignore
+    arg [-v] ==> ignore
+  Library search paths: [;/Users/yongfeiwang/lib;.;/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0;/opt/local/lib/gcc10;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib]
+  Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  remove lib [System]
+  collapse library dir [/Users/yongfeiwang/lib] ==> [/Users/yongfeiwang/lib]
+  collapse library dir [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0] ==> [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0]
+  collapse library dir [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../..] ==> [/opt/local/lib/gcc10]
+  collapse library dir [/Users/yongfeiwang/lib] ==> [/Users/yongfeiwang/lib]
+  collapse library dir [.] ==> [/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop]
+  collapse library dir [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0] ==> [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0]
+  collapse library dir [/opt/local/lib/gcc10] ==> [/opt/local/lib/gcc10]
+  collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib]
+  collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+  implicit libs: [gfortran;gcc_ext.10.5;gcc;quadmath;m;gcc_ext.10.5;gcc]
+  implicit objs: []
+  implicit dirs: [/Users/yongfeiwang/lib;/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0;/opt/local/lib/gcc10;/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib]
+  implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+
+
+Determining if the Fortran compiler supports Fortran 90 passed with the following output:
+Change Dir: /Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cea8a/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_cea8a.dir/build.make CMakeFiles/cmTC_cea8a.dir/build
+Building Fortran object CMakeFiles/cmTC_cea8a.dir/testFortranCompilerF90.f90.o
+/opt/local/bin/gfortran   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -c /Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/build/CMakeFiles/CMakeTmp/testFortranCompilerF90.f90 -o CMakeFiles/cmTC_cea8a.dir/testFortranCompilerF90.f90.o
+Linking Fortran executable cmTC_cea8a
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cea8a.dir/link.txt --verbose=1
+/opt/local/bin/gfortran  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk CMakeFiles/cmTC_cea8a.dir/testFortranCompilerF90.f90.o -o cmTC_cea8a 
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c2402/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_c2402.dir/build.make CMakeFiles/cmTC_c2402.dir/build
+Building C object CMakeFiles/cmTC_c2402.dir/CMakeCCompilerABI.c.o
+/opt/local/bin/gcc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk   -v -Wl,-v -o CMakeFiles/cmTC_c2402.dir/CMakeCCompilerABI.c.o -c /opt/local/share/cmake-3.21/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/opt/local/bin/gcc
+Target: x86_64-apple-darwin20
+Configured with: /opt/local/var/macports/build/_opt_bblocal_var_buildworker_ports_build_ports_lang_gcc10/gcc10/work/gcc-10.3.0/configure --prefix=/opt/local --build=x86_64-apple-darwin20 --enable-languages=c,c++,objc,obj-c++,lto,fortran,jit --libdir=/opt/local/lib/gcc10 --includedir=/opt/local/include/gcc10 --infodir=/opt/local/share/info --mandir=/opt/local/share/man --datarootdir=/opt/local/share/gcc-10 --with-local-prefix=/opt/local --with-system-zlib --disable-nls --program-suffix=-mp-10 --with-gxx-include-dir=/opt/local/include/gcc10/c++/ --with-gmp=/opt/local --with-mpfr=/opt/local --with-mpc=/opt/local --with-isl=/opt/local --enable-stage1-checking --disable-multilib --enable-lto --enable-libstdcxx-time --with-build-config=bootstrap-debug --with-as=/opt/local/bin/as --with-ld=/opt/local/bin/ld --with-ar=/opt/local/bin/ar --with-bugurl=https://trac.macports.org/newticket --enable-host-shared --disable-tls --with-pkgversion='MacPorts gcc10 10.3.0_0' --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.3.0 (MacPorts gcc10 10.3.0_0) 
+COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_c2402.dir/CMakeCCompilerABI.c.o' '-c' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-mtune=core2'
+ /opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/cc1 -quiet -v -D__DYNAMIC__ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk /opt/local/share/cmake-3.21/Modules/CMakeCCompilerABI.c -fPIC -quiet -dumpbase CMakeCCompilerABI.c -mmacosx-version-min=11.5.0 -mtune=core2 -auxbase-strip CMakeFiles/cmTC_c2402.dir/CMakeCCompilerABI.c.o -version -o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//ccSKi6rG.s
+GNU C17 (MacPorts gcc10 10.3.0_0) version 10.3.0 (x86_64-apple-darwin20)
+	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/opt/local/include"
+ignoring nonexistent directory "/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../../../x86_64-apple-darwin20/include"
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/yongfeiwang/include
+ .
+ /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include
+ /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include-fixed
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks
+End of search list.
+GNU C17 (MacPorts gcc10 10.3.0_0) version 10.3.0 (x86_64-apple-darwin20)
+	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 0011ab44ddda1dc6411646c412b8ae43
+COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_c2402.dir/CMakeCCompilerABI.c.o' '-c' '-mmacosx-version-min=11.5.0'  '-mtune=core2'
+ /opt/local/bin/as -arch x86_64 -v -force_cpusubtype_ALL -mmacosx-version-min=11.5 -o CMakeFiles/cmTC_c2402.dir/CMakeCCompilerABI.c.o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//ccSKi6rG.s
+Apple clang version 13.0.0 (clang-1300.0.29.3)
+Target: x86_64-apple-darwin20.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1as -triple x86_64-apple-macosx11.5.0 -filetype obj -main-file-name ccSKi6rG.s -target-cpu penryn -fdebug-compilation-dir /Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/build/CMakeFiles/CMakeTmp -dwarf-debug-producer "Apple clang version 13.0.0 (clang-1300.0.29.3)" -dwarf-version=4 -mrelocation-model pic --mrelax-relocations -mllvm -disable-aligned-alloc-awareness=1 -mllvm -enable-dse-memoryssa=0 -o CMakeFiles/cmTC_c2402.dir/CMakeCCompilerABI.c.o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//ccSKi6rG.s
+COMPILER_PATH=/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/
+LIBRARY_PATH=/Users/yongfeiwang/lib/:./:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../
+COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_c2402.dir/CMakeCCompilerABI.c.o' '-c' '-mmacosx-version-min=11.5.0'  '-mtune=core2'
+Linking C executable cmTC_c2402
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2402.dir/link.txt --verbose=1
+/opt/local/bin/gcc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_c2402.dir/CMakeCCompilerABI.c.o -o cmTC_c2402 
+Using built-in specs.
+COLLECT_GCC=/opt/local/bin/gcc
+COLLECT_LTO_WRAPPER=/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/lto-wrapper
+Target: x86_64-apple-darwin20
+Configured with: /opt/local/var/macports/build/_opt_bblocal_var_buildworker_ports_build_ports_lang_gcc10/gcc10/work/gcc-10.3.0/configure --prefix=/opt/local --build=x86_64-apple-darwin20 --enable-languages=c,c++,objc,obj-c++,lto,fortran,jit --libdir=/opt/local/lib/gcc10 --includedir=/opt/local/include/gcc10 --infodir=/opt/local/share/info --mandir=/opt/local/share/man --datarootdir=/opt/local/share/gcc-10 --with-local-prefix=/opt/local --with-system-zlib --disable-nls --program-suffix=-mp-10 --with-gxx-include-dir=/opt/local/include/gcc10/c++/ --with-gmp=/opt/local --with-mpfr=/opt/local --with-mpc=/opt/local --with-isl=/opt/local --enable-stage1-checking --disable-multilib --enable-lto --enable-libstdcxx-time --with-build-config=bootstrap-debug --with-as=/opt/local/bin/as --with-ld=/opt/local/bin/ld --with-ar=/opt/local/bin/ar --with-bugurl=https://trac.macports.org/newticket --enable-host-shared --disable-tls --with-pkgversion='MacPorts gcc10 10.3.0_0' --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.3.0 (MacPorts gcc10 10.3.0_0) 
+COMPILER_PATH=/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/
+LIBRARY_PATH=/Users/yongfeiwang/lib/:./:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../
+COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-v' '-o' 'cmTC_c2402' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-mtune=core2'
+ /opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/collect2 -dynamic -arch x86_64 -macosx_version_min 11.5.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -weak_reference_mismatches non-weak -o cmTC_c2402 -L/Users/yongfeiwang/lib -L. -L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0 -L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../.. -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_c2402.dir/CMakeCCompilerABI.c.o -lSystem -lgcc_ext.10.5 -lgcc -lSystem -no_compact_unwind -v
+collect2 version 10.3.0
+/opt/local/bin/ld -dynamic -arch x86_64 -macosx_version_min 11.5.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -weak_reference_mismatches non-weak -o cmTC_c2402 -L/Users/yongfeiwang/lib -L. -L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0 -L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../.. -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_c2402.dir/CMakeCCompilerABI.c.o -lSystem -lgcc_ext.10.5 -lgcc -lSystem -no_compact_unwind -v
+@(#)PROGRAM:ld  PROJECT:ld64-711
+BUILD 14:59:24 Aug 21 2021
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+@(#)PROGRAM:ld  PROJECT:ld64-711
+BUILD 14:59:24 Aug 21 2021
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/Users/yongfeiwang/lib
+	.
+	/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0
+	/opt/local/lib/gcc10
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib
+Framework search paths:
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Users/yongfeiwang/include]
+    add: [.]
+    add: [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include]
+    add: [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include-fixed]
+    add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include]
+    add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+  end of search list found
+  collapse include dir [/Users/yongfeiwang/include] ==> [/Users/yongfeiwang/include]
+  skipping relative include dir [.]
+  collapse include dir [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include] ==> [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include]
+  collapse include dir [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include-fixed] ==> [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include-fixed]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+  implicit include dirs: [/Users/yongfeiwang/include;/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include;/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include-fixed;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_c2402/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_c2402.dir/build.make CMakeFiles/cmTC_c2402.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_c2402.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/opt/local/bin/gcc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk   -v -Wl -v -o CMakeFiles/cmTC_c2402.dir/CMakeCCompilerABI.c.o -c /opt/local/share/cmake-3.21/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/local/bin/gcc]
+  ignore line: [Target: x86_64-apple-darwin20]
+  ignore line: [Configured with: /opt/local/var/macports/build/_opt_bblocal_var_buildworker_ports_build_ports_lang_gcc10/gcc10/work/gcc-10.3.0/configure --prefix=/opt/local --build=x86_64-apple-darwin20 --enable-languages=c,c++,objc,obj-c++,lto,fortran,jit --libdir=/opt/local/lib/gcc10 --includedir=/opt/local/include/gcc10 --infodir=/opt/local/share/info --mandir=/opt/local/share/man --datarootdir=/opt/local/share/gcc-10 --with-local-prefix=/opt/local --with-system-zlib --disable-nls --program-suffix=-mp-10 --with-gxx-include-dir=/opt/local/include/gcc10/c++/ --with-gmp=/opt/local --with-mpfr=/opt/local --with-mpc=/opt/local --with-isl=/opt/local --enable-stage1-checking --disable-multilib --enable-lto --enable-libstdcxx-time --with-build-config=bootstrap-debug --with-as=/opt/local/bin/as --with-ld=/opt/local/bin/ld --with-ar=/opt/local/bin/ar --with-bugurl=https://trac.macports.org/newticket --enable-host-shared --disable-tls --with-pkgversion='MacPorts gcc10 10.3.0_0' --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.3.0 (MacPorts gcc10 10.3.0_0) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_c2402.dir/CMakeCCompilerABI.c.o' '-c' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-mtune=core2']
+  ignore line: [ /opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/cc1 -quiet -v -D__DYNAMIC__ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk /opt/local/share/cmake-3.21/Modules/CMakeCCompilerABI.c -fPIC -quiet -dumpbase CMakeCCompilerABI.c -mmacosx-version-min=11.5.0 -mtune=core2 -auxbase-strip CMakeFiles/cmTC_c2402.dir/CMakeCCompilerABI.c.o -version -o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//ccSKi6rG.s]
+  ignore line: [GNU C17 (MacPorts gcc10 10.3.0_0) version 10.3.0 (x86_64-apple-darwin20)]
+  ignore line: [	compiled by GNU C version 10.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/opt/local/include"]
+  ignore line: [ignoring nonexistent directory "/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../../../x86_64-apple-darwin20/include"]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/Library/Frameworks"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Users/yongfeiwang/include]
+  ignore line: [ .]
+  ignore line: [ /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include]
+  ignore line: [ /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include-fixed]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (MacPorts gcc10 10.3.0_0) version 10.3.0 (x86_64-apple-darwin20)]
+  ignore line: [	compiled by GNU C version 10.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 0011ab44ddda1dc6411646c412b8ae43]
+  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_c2402.dir/CMakeCCompilerABI.c.o' '-c' '-mmacosx-version-min=11.5.0'  '-mtune=core2']
+  ignore line: [ /opt/local/bin/as -arch x86_64 -v -force_cpusubtype_ALL -mmacosx-version-min=11.5 -o CMakeFiles/cmTC_c2402.dir/CMakeCCompilerABI.c.o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//ccSKi6rG.s]
+  ignore line: [Apple clang version 13.0.0 (clang-1300.0.29.3)]
+  ignore line: [Target: x86_64-apple-darwin20.6.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1as -triple x86_64-apple-macosx11.5.0 -filetype obj -main-file-name ccSKi6rG.s -target-cpu penryn -fdebug-compilation-dir /Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/build/CMakeFiles/CMakeTmp -dwarf-debug-producer "Apple clang version 13.0.0 (clang-1300.0.29.3)" -dwarf-version=4 -mrelocation-model pic --mrelax-relocations -mllvm -disable-aligned-alloc-awareness=1 -mllvm -enable-dse-memoryssa=0 -o CMakeFiles/cmTC_c2402.dir/CMakeCCompilerABI.c.o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//ccSKi6rG.s]
+  ignore line: [COMPILER_PATH=/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/]
+  ignore line: [LIBRARY_PATH=/Users/yongfeiwang/lib/:./:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_c2402.dir/CMakeCCompilerABI.c.o' '-c' '-mmacosx-version-min=11.5.0'  '-mtune=core2']
+  ignore line: [Linking C executable cmTC_c2402]
+  ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2402.dir/link.txt --verbose=1]
+  ignore line: [/opt/local/bin/gcc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_c2402.dir/CMakeCCompilerABI.c.o -o cmTC_c2402 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/local/bin/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/lto-wrapper]
+  ignore line: [Target: x86_64-apple-darwin20]
+  ignore line: [Configured with: /opt/local/var/macports/build/_opt_bblocal_var_buildworker_ports_build_ports_lang_gcc10/gcc10/work/gcc-10.3.0/configure --prefix=/opt/local --build=x86_64-apple-darwin20 --enable-languages=c,c++,objc,obj-c++,lto,fortran,jit --libdir=/opt/local/lib/gcc10 --includedir=/opt/local/include/gcc10 --infodir=/opt/local/share/info --mandir=/opt/local/share/man --datarootdir=/opt/local/share/gcc-10 --with-local-prefix=/opt/local --with-system-zlib --disable-nls --program-suffix=-mp-10 --with-gxx-include-dir=/opt/local/include/gcc10/c++/ --with-gmp=/opt/local --with-mpfr=/opt/local --with-mpc=/opt/local --with-isl=/opt/local --enable-stage1-checking --disable-multilib --enable-lto --enable-libstdcxx-time --with-build-config=bootstrap-debug --with-as=/opt/local/bin/as --with-ld=/opt/local/bin/ld --with-ar=/opt/local/bin/ar --with-bugurl=https://trac.macports.org/newticket --enable-host-shared --disable-tls --with-pkgversion='MacPorts gcc10 10.3.0_0' --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.3.0 (MacPorts gcc10 10.3.0_0) ]
+  ignore line: [COMPILER_PATH=/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/]
+  ignore line: [LIBRARY_PATH=/Users/yongfeiwang/lib/:./:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-v' '-o' 'cmTC_c2402' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-mtune=core2']
+  link line: [ /opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/collect2 -dynamic -arch x86_64 -macosx_version_min 11.5.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -weak_reference_mismatches non-weak -o cmTC_c2402 -L/Users/yongfeiwang/lib -L. -L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0 -L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../.. -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_c2402.dir/CMakeCCompilerABI.c.o -lSystem -lgcc_ext.10.5 -lgcc -lSystem -no_compact_unwind -v]
+    arg [/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/collect2] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [11.5.0] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk] ==> ignore
+    arg [-weak_reference_mismatches] ==> ignore
+    arg [non-weak] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_c2402] ==> ignore
+    arg [-L/Users/yongfeiwang/lib] ==> dir [/Users/yongfeiwang/lib]
+    arg [-L.] ==> ignore
+    arg [-L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0] ==> dir [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0]
+    arg [-L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../..] ==> dir [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../..]
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_c2402.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [-lgcc_ext.10.5] ==> lib [gcc_ext.10.5]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lSystem] ==> lib [System]
+    arg [-no_compact_unwind] ==> ignore
+    arg [-v] ==> ignore
+  Library search paths: [;/Users/yongfeiwang/lib;.;/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0;/opt/local/lib/gcc10;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib]
+  Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  remove lib [System]
+  collapse library dir [/Users/yongfeiwang/lib] ==> [/Users/yongfeiwang/lib]
+  collapse library dir [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0] ==> [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0]
+  collapse library dir [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../..] ==> [/opt/local/lib/gcc10]
+  collapse library dir [/Users/yongfeiwang/lib] ==> [/Users/yongfeiwang/lib]
+  collapse library dir [.] ==> [/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop]
+  collapse library dir [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0] ==> [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0]
+  collapse library dir [/opt/local/lib/gcc10] ==> [/opt/local/lib/gcc10]
+  collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib]
+  collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+  implicit libs: [gcc_ext.10.5;gcc]
+  implicit objs: []
+  implicit dirs: [/Users/yongfeiwang/lib;/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0;/opt/local/lib/gcc10;/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib]
+  implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3a334/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_3a334.dir/build.make CMakeFiles/cmTC_3a334.dir/build
+Building CXX object CMakeFiles/cmTC_3a334.dir/CMakeCXXCompilerABI.cpp.o
+/opt/local/bin/g++   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk   -v -Wl,-v -o CMakeFiles/cmTC_3a334.dir/CMakeCXXCompilerABI.cpp.o -c /opt/local/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/opt/local/bin/g++
+Target: x86_64-apple-darwin20
+Configured with: /opt/local/var/macports/build/_opt_bblocal_var_buildworker_ports_build_ports_lang_gcc10/gcc10/work/gcc-10.3.0/configure --prefix=/opt/local --build=x86_64-apple-darwin20 --enable-languages=c,c++,objc,obj-c++,lto,fortran,jit --libdir=/opt/local/lib/gcc10 --includedir=/opt/local/include/gcc10 --infodir=/opt/local/share/info --mandir=/opt/local/share/man --datarootdir=/opt/local/share/gcc-10 --with-local-prefix=/opt/local --with-system-zlib --disable-nls --program-suffix=-mp-10 --with-gxx-include-dir=/opt/local/include/gcc10/c++/ --with-gmp=/opt/local --with-mpfr=/opt/local --with-mpc=/opt/local --with-isl=/opt/local --enable-stage1-checking --disable-multilib --enable-lto --enable-libstdcxx-time --with-build-config=bootstrap-debug --with-as=/opt/local/bin/as --with-ld=/opt/local/bin/ld --with-ar=/opt/local/bin/ar --with-bugurl=https://trac.macports.org/newticket --enable-host-shared --disable-tls --with-pkgversion='MacPorts gcc10 10.3.0_0' --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.3.0 (MacPorts gcc10 10.3.0_0) 
+COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_3a334.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-shared-libgcc' '-mtune=core2'
+ /opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/cc1plus -quiet -v -D__DYNAMIC__ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk /opt/local/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp -fPIC -quiet -dumpbase CMakeCXXCompilerABI.cpp -mmacosx-version-min=11.5.0 -mtune=core2 -auxbase-strip CMakeFiles/cmTC_3a334.dir/CMakeCXXCompilerABI.cpp.o -version -o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//ccqe5ciq.s
+GNU C++14 (MacPorts gcc10 10.3.0_0) version 10.3.0 (x86_64-apple-darwin20)
+	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/opt/local/include"
+ignoring nonexistent directory "/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../../../x86_64-apple-darwin20/include"
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/yongfeiwang/include
+ .
+ /opt/local/include/gcc10/c++/
+ /opt/local/include/gcc10/c++//x86_64-apple-darwin20
+ /opt/local/include/gcc10/c++//backward
+ /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include
+ /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include-fixed
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks
+End of search list.
+GNU C++14 (MacPorts gcc10 10.3.0_0) version 10.3.0 (x86_64-apple-darwin20)
+	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 9911e76d15871707c1f44ad24855e8d2
+COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_3a334.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=11.5.0'  '-shared-libgcc' '-mtune=core2'
+ /opt/local/bin/as -arch x86_64 -v -force_cpusubtype_ALL -mmacosx-version-min=11.5 -o CMakeFiles/cmTC_3a334.dir/CMakeCXXCompilerABI.cpp.o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//ccqe5ciq.s
+Apple clang version 13.0.0 (clang-1300.0.29.3)
+Target: x86_64-apple-darwin20.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1as -triple x86_64-apple-macosx11.5.0 -filetype obj -main-file-name ccqe5ciq.s -target-cpu penryn -fdebug-compilation-dir /Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/build/CMakeFiles/CMakeTmp -dwarf-debug-producer "Apple clang version 13.0.0 (clang-1300.0.29.3)" -dwarf-version=4 -mrelocation-model pic --mrelax-relocations -mllvm -disable-aligned-alloc-awareness=1 -mllvm -enable-dse-memoryssa=0 -o CMakeFiles/cmTC_3a334.dir/CMakeCXXCompilerABI.cpp.o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//ccqe5ciq.s
+COMPILER_PATH=/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/
+LIBRARY_PATH=/Users/yongfeiwang/lib/:./:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../
+COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_3a334.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=11.5.0'  '-shared-libgcc' '-mtune=core2'
+Linking CXX executable cmTC_3a334
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a334.dir/link.txt --verbose=1
+/opt/local/bin/g++  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_3a334.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3a334 
+Using built-in specs.
+COLLECT_GCC=/opt/local/bin/g++
+COLLECT_LTO_WRAPPER=/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/lto-wrapper
+Target: x86_64-apple-darwin20
+Configured with: /opt/local/var/macports/build/_opt_bblocal_var_buildworker_ports_build_ports_lang_gcc10/gcc10/work/gcc-10.3.0/configure --prefix=/opt/local --build=x86_64-apple-darwin20 --enable-languages=c,c++,objc,obj-c++,lto,fortran,jit --libdir=/opt/local/lib/gcc10 --includedir=/opt/local/include/gcc10 --infodir=/opt/local/share/info --mandir=/opt/local/share/man --datarootdir=/opt/local/share/gcc-10 --with-local-prefix=/opt/local --with-system-zlib --disable-nls --program-suffix=-mp-10 --with-gxx-include-dir=/opt/local/include/gcc10/c++/ --with-gmp=/opt/local --with-mpfr=/opt/local --with-mpc=/opt/local --with-isl=/opt/local --enable-stage1-checking --disable-multilib --enable-lto --enable-libstdcxx-time --with-build-config=bootstrap-debug --with-as=/opt/local/bin/as --with-ld=/opt/local/bin/ld --with-ar=/opt/local/bin/ar --with-bugurl=https://trac.macports.org/newticket --enable-host-shared --disable-tls --with-pkgversion='MacPorts gcc10 10.3.0_0' --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.3.0 (MacPorts gcc10 10.3.0_0) 
+COMPILER_PATH=/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/
+LIBRARY_PATH=/Users/yongfeiwang/lib/:./:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../
+COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-v' '-o' 'cmTC_3a334' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-shared-libgcc' '-mtune=core2'
+ /opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/collect2 -dynamic -arch x86_64 -macosx_version_min 11.5.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -weak_reference_mismatches non-weak -o cmTC_3a334 -L/Users/yongfeiwang/lib -L. -L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0 -L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../.. -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_3a334.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lSystem -lgcc_ext.10.5 -lgcc -lSystem -no_compact_unwind -v
+collect2 version 10.3.0
+/opt/local/bin/ld -dynamic -arch x86_64 -macosx_version_min 11.5.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -weak_reference_mismatches non-weak -o cmTC_3a334 -L/Users/yongfeiwang/lib -L. -L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0 -L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../.. -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_3a334.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lSystem -lgcc_ext.10.5 -lgcc -lSystem -no_compact_unwind -v
+@(#)PROGRAM:ld  PROJECT:ld64-711
+BUILD 14:59:24 Aug 21 2021
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+@(#)PROGRAM:ld  PROJECT:ld64-711
+BUILD 14:59:24 Aug 21 2021
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/Users/yongfeiwang/lib
+	.
+	/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0
+	/opt/local/lib/gcc10
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib
+Framework search paths:
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Users/yongfeiwang/include]
+    add: [.]
+    add: [/opt/local/include/gcc10/c++/]
+    add: [/opt/local/include/gcc10/c++//x86_64-apple-darwin20]
+    add: [/opt/local/include/gcc10/c++//backward]
+    add: [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include]
+    add: [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include-fixed]
+    add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include]
+    add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+  end of search list found
+  collapse include dir [/Users/yongfeiwang/include] ==> [/Users/yongfeiwang/include]
+  skipping relative include dir [.]
+  collapse include dir [/opt/local/include/gcc10/c++/] ==> [/opt/local/include/gcc10/c++]
+  collapse include dir [/opt/local/include/gcc10/c++//x86_64-apple-darwin20] ==> [/opt/local/include/gcc10/c++/x86_64-apple-darwin20]
+  collapse include dir [/opt/local/include/gcc10/c++//backward] ==> [/opt/local/include/gcc10/c++/backward]
+  collapse include dir [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include] ==> [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include]
+  collapse include dir [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include-fixed] ==> [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include-fixed]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+  implicit include dirs: [/Users/yongfeiwang/include;/opt/local/include/gcc10/c++;/opt/local/include/gcc10/c++/x86_64-apple-darwin20;/opt/local/include/gcc10/c++/backward;/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include;/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include-fixed;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_3a334/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_3a334.dir/build.make CMakeFiles/cmTC_3a334.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_3a334.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/opt/local/bin/g++   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk   -v -Wl -v -o CMakeFiles/cmTC_3a334.dir/CMakeCXXCompilerABI.cpp.o -c /opt/local/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/local/bin/g++]
+  ignore line: [Target: x86_64-apple-darwin20]
+  ignore line: [Configured with: /opt/local/var/macports/build/_opt_bblocal_var_buildworker_ports_build_ports_lang_gcc10/gcc10/work/gcc-10.3.0/configure --prefix=/opt/local --build=x86_64-apple-darwin20 --enable-languages=c,c++,objc,obj-c++,lto,fortran,jit --libdir=/opt/local/lib/gcc10 --includedir=/opt/local/include/gcc10 --infodir=/opt/local/share/info --mandir=/opt/local/share/man --datarootdir=/opt/local/share/gcc-10 --with-local-prefix=/opt/local --with-system-zlib --disable-nls --program-suffix=-mp-10 --with-gxx-include-dir=/opt/local/include/gcc10/c++/ --with-gmp=/opt/local --with-mpfr=/opt/local --with-mpc=/opt/local --with-isl=/opt/local --enable-stage1-checking --disable-multilib --enable-lto --enable-libstdcxx-time --with-build-config=bootstrap-debug --with-as=/opt/local/bin/as --with-ld=/opt/local/bin/ld --with-ar=/opt/local/bin/ar --with-bugurl=https://trac.macports.org/newticket --enable-host-shared --disable-tls --with-pkgversion='MacPorts gcc10 10.3.0_0' --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.3.0 (MacPorts gcc10 10.3.0_0) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_3a334.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-shared-libgcc' '-mtune=core2']
+  ignore line: [ /opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/cc1plus -quiet -v -D__DYNAMIC__ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk /opt/local/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp -fPIC -quiet -dumpbase CMakeCXXCompilerABI.cpp -mmacosx-version-min=11.5.0 -mtune=core2 -auxbase-strip CMakeFiles/cmTC_3a334.dir/CMakeCXXCompilerABI.cpp.o -version -o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//ccqe5ciq.s]
+  ignore line: [GNU C++14 (MacPorts gcc10 10.3.0_0) version 10.3.0 (x86_64-apple-darwin20)]
+  ignore line: [	compiled by GNU C version 10.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/opt/local/include"]
+  ignore line: [ignoring nonexistent directory "/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../../../x86_64-apple-darwin20/include"]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/Library/Frameworks"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Users/yongfeiwang/include]
+  ignore line: [ .]
+  ignore line: [ /opt/local/include/gcc10/c++/]
+  ignore line: [ /opt/local/include/gcc10/c++//x86_64-apple-darwin20]
+  ignore line: [ /opt/local/include/gcc10/c++//backward]
+  ignore line: [ /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include]
+  ignore line: [ /opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/include-fixed]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (MacPorts gcc10 10.3.0_0) version 10.3.0 (x86_64-apple-darwin20)]
+  ignore line: [	compiled by GNU C version 10.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 9911e76d15871707c1f44ad24855e8d2]
+  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_3a334.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=11.5.0'  '-shared-libgcc' '-mtune=core2']
+  ignore line: [ /opt/local/bin/as -arch x86_64 -v -force_cpusubtype_ALL -mmacosx-version-min=11.5 -o CMakeFiles/cmTC_3a334.dir/CMakeCXXCompilerABI.cpp.o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//ccqe5ciq.s]
+  ignore line: [Apple clang version 13.0.0 (clang-1300.0.29.3)]
+  ignore line: [Target: x86_64-apple-darwin20.6.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1as -triple x86_64-apple-macosx11.5.0 -filetype obj -main-file-name ccqe5ciq.s -target-cpu penryn -fdebug-compilation-dir /Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop/build/CMakeFiles/CMakeTmp -dwarf-debug-producer "Apple clang version 13.0.0 (clang-1300.0.29.3)" -dwarf-version=4 -mrelocation-model pic --mrelax-relocations -mllvm -disable-aligned-alloc-awareness=1 -mllvm -enable-dse-memoryssa=0 -o CMakeFiles/cmTC_3a334.dir/CMakeCXXCompilerABI.cpp.o /var/folders/tc/h28y9jq95gqdg94dsf0p7cqh0000gn/T//ccqe5ciq.s]
+  ignore line: [COMPILER_PATH=/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/]
+  ignore line: [LIBRARY_PATH=/Users/yongfeiwang/lib/:./:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_3a334.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=11.5.0'  '-shared-libgcc' '-mtune=core2']
+  ignore line: [Linking CXX executable cmTC_3a334]
+  ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a334.dir/link.txt --verbose=1]
+  ignore line: [/opt/local/bin/g++  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_3a334.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3a334 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/local/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/lto-wrapper]
+  ignore line: [Target: x86_64-apple-darwin20]
+  ignore line: [Configured with: /opt/local/var/macports/build/_opt_bblocal_var_buildworker_ports_build_ports_lang_gcc10/gcc10/work/gcc-10.3.0/configure --prefix=/opt/local --build=x86_64-apple-darwin20 --enable-languages=c,c++,objc,obj-c++,lto,fortran,jit --libdir=/opt/local/lib/gcc10 --includedir=/opt/local/include/gcc10 --infodir=/opt/local/share/info --mandir=/opt/local/share/man --datarootdir=/opt/local/share/gcc-10 --with-local-prefix=/opt/local --with-system-zlib --disable-nls --program-suffix=-mp-10 --with-gxx-include-dir=/opt/local/include/gcc10/c++/ --with-gmp=/opt/local --with-mpfr=/opt/local --with-mpc=/opt/local --with-isl=/opt/local --enable-stage1-checking --disable-multilib --enable-lto --enable-libstdcxx-time --with-build-config=bootstrap-debug --with-as=/opt/local/bin/as --with-ld=/opt/local/bin/ld --with-ar=/opt/local/bin/ar --with-bugurl=https://trac.macports.org/newticket --enable-host-shared --disable-tls --with-pkgversion='MacPorts gcc10 10.3.0_0' --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.3.0 (MacPorts gcc10 10.3.0_0) ]
+  ignore line: [COMPILER_PATH=/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/libexec/gcc/x86_64-apple-darwin20/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/]
+  ignore line: [LIBRARY_PATH=/Users/yongfeiwang/lib/:./:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/:/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '-v' '-o' 'cmTC_3a334' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-shared-libgcc' '-mtune=core2']
+  link line: [ /opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/collect2 -dynamic -arch x86_64 -macosx_version_min 11.5.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -weak_reference_mismatches non-weak -o cmTC_3a334 -L/Users/yongfeiwang/lib -L. -L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0 -L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../.. -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_3a334.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lSystem -lgcc_ext.10.5 -lgcc -lSystem -no_compact_unwind -v]
+    arg [/opt/local/libexec/gcc/x86_64-apple-darwin20/10.3.0/collect2] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [11.5.0] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk] ==> ignore
+    arg [-weak_reference_mismatches] ==> ignore
+    arg [non-weak] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_3a334] ==> ignore
+    arg [-L/Users/yongfeiwang/lib] ==> dir [/Users/yongfeiwang/lib]
+    arg [-L.] ==> ignore
+    arg [-L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0] ==> dir [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0]
+    arg [-L/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../..] ==> dir [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../..]
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_3a334.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lSystem] ==> lib [System]
+    arg [-lgcc_ext.10.5] ==> lib [gcc_ext.10.5]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lSystem] ==> lib [System]
+    arg [-no_compact_unwind] ==> ignore
+    arg [-v] ==> ignore
+  Library search paths: [;/Users/yongfeiwang/lib;.;/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0;/opt/local/lib/gcc10;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib]
+  Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  remove lib [System]
+  collapse library dir [/Users/yongfeiwang/lib] ==> [/Users/yongfeiwang/lib]
+  collapse library dir [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0] ==> [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0]
+  collapse library dir [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0/../../..] ==> [/opt/local/lib/gcc10]
+  collapse library dir [/Users/yongfeiwang/lib] ==> [/Users/yongfeiwang/lib]
+  collapse library dir [.] ==> [/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop]
+  collapse library dir [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0] ==> [/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0]
+  collapse library dir [/opt/local/lib/gcc10] ==> [/opt/local/lib/gcc10]
+  collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib]
+  collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+  implicit libs: [stdc++;gcc_ext.10.5;gcc]
+  implicit objs: []
+  implicit dirs: [/Users/yongfeiwang/lib;/opt/local/lib/gcc10/gcc/x86_64-apple-darwin20/10.3.0;/opt/local/lib/gcc10;/Users/yongfeiwang/software/kokkos-tutorials/Exercises/kokkos-fortran-interop;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib]
+  implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+
+

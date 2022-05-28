@@ -1,0 +1,2 @@
+/opt/local/bin/ar qc libflcl-testlib.a CMakeFiles/flcl-testlib-fortran.dir/flcl-test-f.F90.o CMakeFiles/flcl-testlib-cxx.dir/flcl-test-cxx.cpp.o
+/opt/local/bin/ranlib libflcl-testlib.a
