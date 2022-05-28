@@ -21,9 +21,9 @@ In this project, we propose to reorganize a computationally intensive kernel in 
 
 ## Working [slack](https://scecsources.slack.com)
 
----
-Useful links
 
-## Markdown:
+## Useful links
+
+### Markdown:
 * [basic syntax](https://www.markdownguide.org/basic-syntax/)
 * [latex in markdown](https://ashki23.github.io/markdown-latex.html)
