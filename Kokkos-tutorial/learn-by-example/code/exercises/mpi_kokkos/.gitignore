@@ -1,0 +1,5 @@
+*.o
+*.out
+test_mpi.cuda
+test_mpi_kokkos.cuda*
+test_mpi_kokkos.omp

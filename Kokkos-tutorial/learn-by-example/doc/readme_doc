@@ -1,0 +1,36 @@
+- video de Mauro Bianco / CSCS : Modern C++ Workshop
+ * GridTools video : 5'13
+ * Kokkos video
+
+- mini-app:
+ * miniPIC : http://www.nersc.gov/research-and-development/apex/apex-benchmarks/minipic/
+ * miniFE : https://github.com/Mantevo/miniFE
+ * miniMD : https://github.com/Mantevo/miniMD
+ * miniAero : https://github.com/Mantevo/miniAero
+ * TeaLeaf : https://github.com/UoB-HPC/TeaLeaf
+ * SummerSchool2016 / CSCS
+
+- papers
+
+https://128.84.21.199/pdf/1611.07409v1.pdf
+
+- slides
+
+https://cfwebprod.sandia.gov/cfdocs/CompResearch/docs/Kokkos-Multi-CoE.pdf
+
+- additional slides
+
+Kokkos in general
+https://trilinos.org/oldsite/events/trilinos_user_group_2013/presentations/2013-11-TUG-Kokkos-Tutorial.pdf
+
+Kokkos+task-based parallelism
+https://cfwebprod.sandia.gov/cfdocs/CompResearch/docs/2016-04-GTC-Kokkos-Task.pdf
+
+performance portability
+http://openmpcon.org/wp-content/uploads/openmpcon2015-tim-mattson-portability.pdf
+
+general overview performance poratable solutions
+https://www.khronos.org/assets/uploads/developers/library/2016-supercomputing/SC16-compareSYCL-Michael-Wong_Nov16.pdf
+
+https://cfwebprod.sandia.gov/cfdocs/CompResearch/docs/kokkos_tutorial_short.pdf
+https://cfwebprod.sandia.gov/cfdocs/CompResearch/docs/2016-01-Kokkos-West.pdf

@@ -1,0 +1,9 @@
+*.o
+euler2d.cuda
+euler2d.omp
+*.vti
+build_*
+build_cuda
+build_openmp
+build_serial
+

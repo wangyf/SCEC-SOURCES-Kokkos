@@ -1,0 +1,383 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{frame}[fragile=singleslide]
+  \frametitle{Kokkos compute Kernels - parallel dispatch (1)}
+
+  \begin{itemize}
+  \item \textbf{3 types of parallel dispatch}
+    \begin{itemize}
+    \item \texttt{Kokkos::parallel\_for}
+    \item \texttt{Kokkos::parallel\_reduce}
+    \item \texttt{Kokkos::parallel\_scan}
+    \end{itemize}
+  \item A dispatch needs as input
+    \begin{itemize}
+    \item \textcolor{red}{\textbf{an execution policy:}} e.g. a range (can simply be an integer), team of threads, ...
+    \item \textbf{a body:} specified as a lambda function or a functor
+    \end{itemize}
+  \item Very important: launching a kernel (thread dispatching) is by default asynchronous
+  \end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{frame}[fragile]
+  \frametitle{Kokkos compute Kernels - parallel dispatch (2)}
+
+  \begin{onlyenv}<1-2>
+    {\large \textcolor{violet}{How to specify a compute kernel in Kokkos ?}}\\
+    {\large 1. \textcolor{blue}{\textbf{Use Lambda functions.}}}\\
+    NB: a lambda in c++11 is an unnamed function object capable of capturing variables in scope.
+    {\small
+      \begin{minted}{c++}
+        // Note: here we use the simplest way to specify an execution policy
+        // i.e. the first parameter (100)
+        Kokkos::parallel_for (100, KOKKOS_LAMBDA (const int i) {
+          data(i) = 2*i;
+        });
+        
+        // is equivalent to the following serial code
+        for(int i = 0; i<100; ++i) {
+          data[i] = 2*i;
+        }
+      \end{minted}
+    }
+  \end{onlyenv}
+  \only<1>{
+    \texttt{KOKKOS\_LAMBDA} is a preprocessor macro specifying the {\bf capture close}
+    \begin{itemize}
+    \item by default \textcolor{blue}{\texttt{KOKKOS\_LAMBDA}} is aliased to \textcolor{darkgreen}{$[=]$} to capture variables of sur\-rounding scope \textcolor{darkgreen}{\bf by value}
+    \item \textcolor{blue}{\texttt{KOKKOS\_LAMBDA}} has a special definition is CUDA is enabled
+    \end{itemize}
+  }
+  \only<2>{
+    Using lambda's means 2 things in 1:
+    \begin{itemize}
+    \item define the computation body (lambda func)
+    \item launch computation.
+    \end{itemize}
+  }
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{frame}[fragile=singleslide]
+  \frametitle{Kokkos compute Kernels - parallel dispatch (3)}
+
+  {\large \textcolor{violet}{How to specify a compute kernel in Kokkos ?}}\\
+  {\large 2. \textcolor{darkgreen}{\textbf{Use a C++ functor class.}}}\\
+  A functor is a class containing a function to execute in parallel, usually it is an \texttt{operator ()}
+  {\small
+    \begin{minted}{c++}
+      class FunctorType {
+        public:
+        // constructor : pass data
+        FunctorType(Kokkos::View<...> data);
+        
+        KOKKOS_INLINE_FUNCTION
+        void operator() ( const int i ) const
+        { data(i) = 2*i; };
+      };
+      ...
+      Kokkos::View<int *> some_data("some_data",100);
+      FunctorType func(some_data); // create a functor instance
+      Kokkos::parallel_for (100, func); // launch computation
+    \end{minted}
+    \begin{itemize}
+    \item \texttt{KOKKOS\_INLINE\_FUNCTION} is a macro with different meaning depending on target (e.g. it contains \texttt{\_\_device\_\_} for cuda)
+    \end{itemize}
+  }
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{frame}[fragile=singleslide]
+  \frametitle{Kokkos compute Kernels - parallel dispatch (4)}
+
+  {\Large \textcolor{violet}{Notes on macros defined in \texttt{core/src/Kokkos\_Macros.hpp}}}
+
+  \begin{itemize}
+  \item \textcolor{blue}{\texttt{KOKKOS\_LAMBA}} is a macro which provides a compiler-portable way of specifying a lambda function with \textbf{capture-by-value closure}.
+    \begin{itemize}
+    \item \textcolor{blue}{\texttt{KOKKOS\_LAMBA}} must be used at the most outer parallel loop; inside a lambda one can call another lambda
+    \end{itemize}
+  \item \textcolor{darkgreen}{\texttt{KOKKOS\_INLINE\_FUNCTION}} \texttt{void operator() (...) const;}\\
+    this macro helps providing the necessary compiler specific \textit{decorators}, e.g. \texttt{\_\_device\_\_} for Cuda to make sure the body can be turns into a Cuda kernel.
+    \begin{itemize}
+    \item macro \textcolor{darkgreen}{\texttt{KOKKOS\_INLINE\_FUNCTION}} must be applied to any function call inside a parallel loop
+    \end{itemize}
+  \end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{frame}[fragile=singleslide]
+  \frametitle{Kokkos compute Kernels - parallel dispatch (5)}
+
+
+  \textbf{Lambda or Functor: which one to use in Kokkos ? Both !}
+  \begin{enumerate}
+  \item \textcolor{blue}{\textbf{Use Lambda functions.}}\\
+    \begin{itemize}
+    \item easy way for small compute kernels
+    \item For GPU, requires Cuda 7.5 (8.0 is current and latest CUDA version)
+    \end{itemize}
+  \item \textcolor{darkgreen}{\textbf{Use a C++ functor class.}}\\
+    \begin{itemize}
+    \item More flexible, allow to design more complex kernels
+    \end{itemize}
+  \end{enumerate}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{frame}[fragile=singleslide]
+  \frametitle{Kokkos compute Kernels - parallel dispatch (6)}
+
+  {\large \textcolor{violet}{\textbf{About Kokkos::parallel\_reduce with lambda}}}
+
+  \begin{itemize}
+  \item As for \texttt{parallel\_for}, loop body can be specified as a \textcolor{blue}{\bf lambda}, or a \textcolor{darkgreen}{\bf functor}; here is the lambda way when reduce operation is \texttt{sum}:
+  \end{itemize}
+  {\small
+    \begin{minted}{c++}
+      // - local_sum is a temporary variable to transfer intermediate result
+      //   between threads (or block of threads)
+      // - sum contains the final reduced result
+      Kokkos::parallel_reduce (100,
+         KOKKOS_LAMBDA (const int i, int &local_sum) {
+           local_sum += data(i);
+         },
+         sum);
+       \end{minted}
+       \begin{itemize}
+       \item Important note: using \texttt{parallel\_reduce} with lambda is only really usefull if the reduce operation $'+'$
+       \item If the reduce operation is something else, you need to specify:\\
+         - how the local result is initialized (default 0)\\
+         - how the different intermediate results are {\it joined}
+       \end{itemize}
+  }
+  
+\end{frame}
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{frame}[fragile=singleslide]
+  \frametitle{Kokkos compute Kernels - parallel dispatch (7)}
+
+  {\large \textcolor{violet}{\textbf{About Kokkos::parallel\_reduce with a functor}}}
+
+  \begin{itemize}
+  \item Kokkos supplies a default \texttt{init} / \texttt{join} operator which is \texttt{operator+}
+  \item If the reduce operator is not trivial (i.e. not a sum) $\Rightarrow$ you need to define methods \texttt{init} and \texttt{join}
+  \end{itemize}
+
+  {\footnotesize
+    \begin{minted}{c++}
+      class ReduceFunctor {
+        public:
+        // declare a constructor ...
+        KOKKOS_INLINE_FUNCTION void 
+        operator() (const int i, data_t &update) const {...}
+
+        // How to join/combine intermediate reduce from different threads
+        KOKKOS_INLINE_FUNCTION void 
+        join(volatile data_t &dst, const volatile data_t &src) const {...}
+
+        // how each thread initializes its reduce result
+        KOKKOS_INLINE_FUNCTION void 
+        init(const volatile data_t &dst) const {...}
+      }
+      \end{minted}
+      This is useful when the reduced variable is complex (e.g. a multi-field structure)
+    }
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{frame}[fragile=singleslide]
+  \frametitle{Kokkos compute Kernels - parallel dispatch (8)}
+  
+  {\Large \textcolor{violet}{\textbf{Parallel dispatch - execution policy}}}
+
+  \begin{itemize}
+  \item Remember that an execution policy specifies \textbf{how} a parallel dispatch is done by the device
+  \item \textcolor{darkgreen}{\bf Range policy:} from...to\\
+    no prescription of order of execution nor concurrency; allows to adapt to the actual hardware; e.g. a GPU has some level of hardware parallelism (Streaming Multiprocessor) and some levels of concurrency (warps and block of threads).
+  \item \textcolor{orange}{\bf Multidimensional range:} still experimental (as of January 2017), mapping a higher than 1D range of iteration.
+  \end{itemize}
+  {\small
+    \begin{minted}{c++}
+      // create the MDrangePolicy object
+      using namespace Kokkos::Experimental;
+      using range_type = MDRangePolicy< Rank<2>, Kokkos::IndexType<int> >;
+      range_type range( {0,0}, {N0,N1} );
+      
+      // use a special multidimensional parallel for launcher
+      md_parallel_for(range, functor);
+    \end{minted}
+  }
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{frame}[fragile=singleslide]
+  \frametitle{Kokkos compute Kernels - parallel dispatch (9)}
+  
+  {\Large \textcolor{violet}{\textbf{Parallel dispatch - execution policy}}}
+
+  \begin{itemize}
+  \item \textcolor{blue}{\bf Team policy:} for {\bf hierarchical parallelism}
+    \begin{itemize}
+    \item threads team %$\Longleftrightarrow$ thread block (in CUDA)
+    \item threads inside a team %$\Longleftrightarrow$ thread (in CUDA)
+    \item vector lanes
+    \end{itemize}
+  \item 
+    {\small
+      \begin{minted}{c++}
+        // Using default execution space and launching
+        // a league with league_size teams with team_size threads each
+        Kokkos::TeamPolicy <>
+        policy( league_size , team_size );
+      \end{minted}
+    }
+    equivalent to launching in CUDA a 1D grid of 1D blocks of threads.\\
+    Team scratch pad memory $\Longleftrightarrow$ CUDA shared memory
+  \item Lambda interface changed:
+    {\small
+      \begin{minted}{c++}
+        KOKKOS_LAMBDA (const team_member& thread) { ...};
+      \end{minted}
+    }
+    team\_member is a structure (aliased to \texttt{Kokkos::TeamPolicy<>::member\_type})
+  \end{itemize}
+\end{frame}
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{frame}[fragile=singleslide]
+  \frametitle{Kokkos compute Kernels - parallel dispatch (10)}
+
+  {\Large \textcolor{violet}{\textbf{Parallel dispatch - execution policy}}}
+
+  \begin{itemize}
+  \item \textcolor{blue}{\bf Team policy:} for {\bf hierarchical parallelism}
+  \item \textcolor{blue}{\texttt{team\_member}} is a structure equipped with
+    \begin{tabular}{ll}
+      \texttt{league\_size()} : & return number of teams (of threads)\\
+      \texttt{league\_rank()} : & return team id (of current thread)\\
+      \texttt{team\_size()}   : & return number of threads (per team)\\
+      \texttt{team\_rank()} : & return thread id (of current thread)
+    \end{tabular}
+  \item Can I synchronize threads ?\\
+    Yes, but only threads inside a team (same semantics as in CUDA with \texttt{\_\_syncthreads();})\\
+    $\Rightarrow$ \texttt{team\_barrier()}
+    
+  \end{itemize}
+  
+\end{frame}
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{frame}[fragile=singleslide]
+  \frametitle{Kokkos compute Kernels - parallel dispatch (11)}
+
+  {\large \textcolor{blue}{\bf Team policy:} for {\bf hierarchical parallelism}}
+
+  \begin{minted}{c++}
+    // with the team policy you need to map a thread to an iteration id
+    KOKKOS_INLINE_FUNCTION
+    void operator() ( const team_member & thread) {
+      // example of data/iteration mapping (similar to CUDA)
+      int i = thread.team_rank() +
+              thread.league_rank() * thread.team_size();
+      data(i) = ... ;
+    }
+  \end{minted}
+  this very similar to CUDA:
+  \begin{minted}{c++}
+    // inside a CUDA kernel, using built-in variables
+    // threadIdx and blocIdx
+    int index = threadIdx.x + blockIdx.x * blockDim.x;
+  \end{minted}
+  
+\end{frame}
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{frame}[fragile=singleslide]
+  \frametitle{Kokkos compute Kernels - parallel dispatch (12)}
+
+  {\large \textcolor{blue}{\bf Team policy:} for {\bf nested parallelism}}
+
+  \begin{minted}{c++}
+    // within a parallel functor with team policy
+    // you can call another parallel_for / reduce / ... 
+    KOKKOS_INLINE_FUNCTION
+    void operator() ( const team_member & thread) {
+      // do something (all threads of all teams participate)
+      do_something();
+      
+      // then parallelize a loop over all threads of a team
+      // each team is executing a loop of 200 iterations
+      // the 200 iterations are splitted over the thread of current team
+      // the total number of iterations is 200 * number of teams
+      Kokkos::parallel_for(Kokkos::TeamThreadRange(thread,200),
+               KOKKOS_LAMBDA (const int& i) {
+                 ...;
+      });
+    }
+  \end{minted}
+  
+\end{frame}
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{frame}[fragile=singleslide]
+  \frametitle{Kokkos compute Kernels - parallel dispatch (13)}
+  
+  {\Large \textcolor{violet}{\textbf{Hierarchical parallelism (advanced)}}}
+
+  \begin{itemize}
+  \item OpenMP: League of Teams of Threads
+  \item Cuda: Grid of Blocks of Threads
+  \item Experimental features: task parallelism
+    \begin{itemize}
+    \item {\small see slides by C. Edwards at GTC2016 \myhref{https://cfwebprod.sandia.gov/cfdocs/CompResearch/docs/2016-04-GTC-Kokkos-Task.pdf}{2016-04-GTC-Kokkos-Task.pdf}}
+    \item \myhref{http://prod.sandia.gov/techlib/access-control.cgi/2017/1710464.pdf}{Kokkos Task DAG capabilities}
+    \item Example application: \myhref{http://prod.sandia.gov/techlib/access-control.cgi/2016/160637r.pdf}{Task Parallel Incomplete Cholesky Factorization}
+using 2D Partitioned-Block Layout
+    \end{itemize}
+  \end{itemize}
+  
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{frame}[fragile=singleslide]
+  \frametitle{Kokkos compute Kernels - Advanced items}
+  
+  {\Large \textcolor{violet}{\textbf{SIMD / Vectorization}}}
+
+  The following reference give details / best practices to obtain carefully written kernels for portable SIMD vectorization:\\
+  \myurl{http://www.sci.utah.edu/publications/Sun2016a/ESPM2Dan-sunderland.pdf}
+
+  \begin{itemize}
+  \item \texttt{Kokkos::subview} $\Rightarrow$ allow to extract a {\it view}
+    \begin{minted}{c++}
+      // assume data is a 3d Kokkos::View
+      // slice is a 1d sub view : column at (i,j)
+      auto slice = subview(data, i, j,  ALL());
+    \end{minted}
+    This is usefull for SIMD, auto vectorization, it helps the compiler understand we are accessing
+    memory with a stride 1 (assuming layout right, which the default for OpenMP device).
+  \end{itemize}
+  
+  
+\end{frame}

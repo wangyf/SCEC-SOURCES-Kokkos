@@ -1,0 +1,17 @@
+# Choses à améliorer
+
+- introduction de Kokkos::View
+  citer les alternatives de tableaux multi-D (mais CPU only):
+  https://github.com/dwwork/FortCpp
+  ndarray
+  Blitz++
+  Boost::MultiArray
+  Eigen
+
+# Choses à ajouter
+
+- utiliser incremental-fluid-kokkos et la doc https://web.stanford.edu/class/cs205b/lectures/lecture17.pdf
+- un mini-exemple Trilinos - résolution de système lineaire 
+- update de la machine Titan vers Summit à ORNL
+https://www.nextplatform.com/2018/03/28/a-first-look-at-summit-supercomputer-application-performance/
+- applications utilsants Kokkos : Lammps, Sparta, trilinos, QmcPack (mini)
