@@ -19,3 +19,6 @@ In this project, we propose to reorganize a computationally intensive kernel in 
 * Christine Goulet (SCEC/USC)
 
 ## Working [slack](https://scecsources.slack.com)
+
+---
+Markdown basic syntax [link](https://www.markdownguide.org/basic-syntax/)
