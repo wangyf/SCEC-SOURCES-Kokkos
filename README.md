@@ -26,6 +26,10 @@ In this project, we propose to reorganize a computationally intensive kernel in 
 
 ## Useful links
 
+### Kokkos online lectures:
+* [Module-1: Introduction, building and parallel dispatch](https://youtu.be/rUIcWtFU5qM)
+* [Module-2: Views and spaces](https://youtu.be/O-asHTtO7O4)
+
 ### Markdown:
 * [basic syntax](https://www.markdownguide.org/basic-syntax/)
 * [latex in markdown](https://ashki23.github.io/markdown-latex.html)
