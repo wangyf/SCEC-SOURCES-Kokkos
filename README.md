@@ -21,6 +21,8 @@ In this project, we propose to reorganize a computationally intensive kernel in 
 
 ## Working [slack](https://scecsources.slack.com)
 
+## Working log
+* [Week-1](https://docs.google.com/presentation/d/1HhAPIeLVFGljRR52KogsXN_SRYyyrFbmcD36ymoxWTg/edit?usp=sharing)
 
 ## Useful links
 
