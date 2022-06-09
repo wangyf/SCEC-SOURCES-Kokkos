@@ -21,6 +21,9 @@ In this project, we propose to reorganize a computationally intensive kernel in 
 
 ## Working [slack](https://scecsources.slack.com)
 
+## Tutorials
+* [Install Kokkos](/Kokkos-tutorial/notes/install_kokkos.md)
+
 ## Working log
 * [Week-1](https://docs.google.com/presentation/d/1HhAPIeLVFGljRR52KogsXN_SRYyyrFbmcD36ymoxWTg/edit?usp=sharing)
 
