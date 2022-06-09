@@ -33,6 +33,7 @@ make
 export OMP_PROC_BIND=spread
 # OMP_PROC_BIND=true/false
 export OMP_PLACES=threads
+# OMP_PLACES=cores/threads/sockets
 export OMP_NUM_THREADS=10
 ./04_Exercise
 ```
