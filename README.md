@@ -28,6 +28,8 @@ In this project, we propose to reorganize a computationally intensive kernel in 
 * [Entrance](https://docs.google.com/presentation/d/1HhAPIeLVFGljRR52KogsXN_SRYyyrFbmcD36ymoxWTg/edit?usp=sharing)
 
 ## Useful links
+### Kokkos programming model
+[Kokkos Wiki](https://github.com/kokkos/kokkos/wiki/The-Kokkos-Programming-Guide)
 
 ### Kokkos online lectures:
 * [Module-1: Introduction, building and parallel dispatch](https://youtu.be/rUIcWtFU5qM)
