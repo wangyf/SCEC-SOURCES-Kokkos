@@ -2,7 +2,7 @@
 
 ### Download and compile Kokkos library
 ``` bash
-cd ${HOME}
+cd ${HOME}/kokkos-tutorial
 git clone https://github.com/kokkos/kokkos.git
 git clone https://github.com/kokkos/kokkos-tutorials.git
 
