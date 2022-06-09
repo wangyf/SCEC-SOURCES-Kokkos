@@ -1,5 +1,7 @@
 ## Install Kokkos
 
 
-`cd ${HOME}
-git clone https://github.com/kokkos/kokkos.git`
+``` bash
+cd ${HOME}
+git clone https://github.com/kokkos/kokkos.git
+```
