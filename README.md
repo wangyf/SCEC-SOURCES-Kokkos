@@ -25,7 +25,7 @@ In this project, we propose to reorganize a computationally intensive kernel in 
 * [Install Kokkos](/Kokkos-tutorial/notes/install_kokkos.md)
 
 ## Working log
-* [Week-1](https://docs.google.com/presentation/d/1HhAPIeLVFGljRR52KogsXN_SRYyyrFbmcD36ymoxWTg/edit?usp=sharing)
+* [Entrance](https://docs.google.com/presentation/d/1HhAPIeLVFGljRR52KogsXN_SRYyyrFbmcD36ymoxWTg/edit?usp=sharing)
 
 ## Useful links
 
