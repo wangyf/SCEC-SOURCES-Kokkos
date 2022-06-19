@@ -15,9 +15,9 @@ To solve this issue, we propose to use the Kokkos framework and develop a perfor
 In this project, we propose to reorganize a computationally intensive kernel in the dynamic rupture code (SORD) that was originally written in Fortran. Message Passing Interface (MPI) is implemented in SORD for inter-node communication that will remain as it is. In contrast, the intra-node computations that model earthquakes and rupture propagations as the highest computational load will be optimized through Kokkos. The new Kokkos-enabled dynamic rupture code will be tested for the diverse backends of OpenMP, CUDA and HIP and its performance will be investigated on different platforms (e.g., Theta for OpenMP, ThetaGPU for CUDA and HIP for Polaris/Aurora). 
 
 ## Team
-* Rena Wu (UCSD)
-* Yongfei Wang (SCEC/USC)
-* Christine Goulet (SCEC/USC)
+>* Rena Wu (UCSD)
+>* Yongfei Wang (SCEC/USC)
+>* Christine Goulet (SCEC/USC)
 
 ## Working [slack](https://scecsources.slack.com)
 
@@ -29,7 +29,7 @@ In this project, we propose to reorganize a computationally intensive kernel in 
 >	* [OpenACC for Mandelbrot set](/Kokkos-tutorial/learn-by-example/code/handson/3/mandelbrot_kokkos/doc/advanced-openacc-techniques.pdf)
 
 ## Working log
-* [Entrance](https://docs.google.com/presentation/d/1HhAPIeLVFGljRR52KogsXN_SRYyyrFbmcD36ymoxWTg/edit?usp=sharing)
+>* [Entrance](https://docs.google.com/presentation/d/1HhAPIeLVFGljRR52KogsXN_SRYyyrFbmcD36ymoxWTg/edit?usp=sharing)
 
 ## Useful links
 ### Kokkos programming model
