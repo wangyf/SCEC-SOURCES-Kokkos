@@ -23,6 +23,7 @@ In this project, we propose to reorganize a computationally intensive kernel in 
 
 ## Tutorials
 * [Install Kokkos](/Kokkos-tutorial/notes/install_kokkos.md)
+* [What is the mandelbrot set?](https://mathworld.wolfram.com/MandelbrotSet.html)
 
 ## Working log
 * [Entrance](https://docs.google.com/presentation/d/1HhAPIeLVFGljRR52KogsXN_SRYyyrFbmcD36ymoxWTg/edit?usp=sharing)
@@ -34,6 +35,7 @@ In this project, we propose to reorganize a computationally intensive kernel in 
 ### Kokkos online lectures:
 * [Module-1: Introduction, building and parallel dispatch](https://youtu.be/rUIcWtFU5qM)
 * [Module-2: Views and spaces](https://youtu.be/O-asHTtO7O4)
+* [Module-3: MultiDimensional Loops and Data Structures](https://youtu.be/nGyJS8u-6GY)
 
 ### Markdown:
 * [basic syntax](https://www.markdownguide.org/basic-syntax/)
