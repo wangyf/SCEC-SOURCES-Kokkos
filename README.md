@@ -33,13 +33,13 @@ In this project, we propose to reorganize a computationally intensive kernel in 
 
 ## Useful links
 ### Kokkos programming model
-[Kokkos Wiki](https://github.com/kokkos/kokkos/wiki/The-Kokkos-Programming-Guide)
+> -	[Kokkos Wiki](https://github.com/kokkos/kokkos/wiki/The-Kokkos-Programming-Guide)
 
 ### Kokkos online lectures:
-* [Module-1: Introduction, building and parallel dispatch](https://youtu.be/rUIcWtFU5qM)
-* [Module-2: Views and spaces](https://youtu.be/O-asHTtO7O4)
-* [Module-3: MultiDimensional Loops and Data Structures](https://youtu.be/nGyJS8u-6GY)
+> * [Module-1: Introduction, building and parallel dispatch](https://youtu.be/rUIcWtFU5qM)
+> * [Module-2: Views and spaces](https://youtu.be/O-asHTtO7O4)
+> * [Module-3: MultiDimensional Loops and Data Structures](https://youtu.be/nGyJS8u-6GY)
 
 ### Markdown:
-* [basic syntax](https://www.markdownguide.org/basic-syntax/)
-* [latex in markdown](https://ashki23.github.io/markdown-latex.html)
+> * [basic syntax](https://www.markdownguide.org/basic-syntax/)
+> * [latex in markdown](https://ashki23.github.io/markdown-latex.html)
