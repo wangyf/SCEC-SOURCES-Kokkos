@@ -21,10 +21,11 @@ In this project, we propose to reorganize a computationally intensive kernel in 
 
 ## Working [slack](https://scecsources.slack.com)
 
->## Tutorials
+## Tutorials
 >* [Install Kokkos](/Kokkos-tutorial/notes/install_kokkos.md)
 >* [What is the mandelbrot set?](https://mathworld.wolfram.com/MandelbrotSet.html)
 >	* [Algorithm for Mandelbrot set](https://complex-analysis.com/content/mandelbrot_set.html#:~:text=The%20simplest%20algorithm%20for%20generating,is%20chosen%20for%20that%20pixel.)
+>	* [Plotting algorithms for the Mandelbrot set](https://en.wikipedia.org/wiki/Plotting_algorithms_for_the_Mandelbrot_set)
 >	* [OpenACC for Mandelbrot set](/Kokkos-tutorial/learn-by-example/code/handson/3/mandelbrot_kokkos/doc/advanced-openacc-techniques.pdf)
 
 ## Working log
