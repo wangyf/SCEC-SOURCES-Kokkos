@@ -22,4 +22,5 @@
 	1. Install GNU compiler
 		``` bash
 		brew install gcc
+		which gcc #please make use gcc in /usr/local/bin
 		```
