@@ -12,7 +12,7 @@
 		brew install wget
 
 		```
-		1. Homebrew installs packages to their own directory and then symlinks their files into /usr/local (on macOS Intel).
+		1. Homebrew installs packages to their own directory and then symlinks their files into /usr/local (you may need add /usr/local/bin into your environmental variable PATH).
 		``` bash
 		cd /usr/local
 		find Cellar
