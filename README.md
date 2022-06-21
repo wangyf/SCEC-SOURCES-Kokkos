@@ -23,6 +23,7 @@ In this project, we propose to reorganize a computationally intensive kernel in 
 
 ## Tutorials
 >* [Install Kokkos](/Kokkos-tutorial/notes/install_kokkos.md)
+>* [Install Kokkos on Mac OS X](/Kokkos-tutorial/notes/kokkos_on_mac.md)
 >* [What is the mandelbrot set?](https://mathworld.wolfram.com/MandelbrotSet.html)
 >	* [Algorithm for Mandelbrot set](https://complex-analysis.com/content/mandelbrot_set.html#:~:text=The%20simplest%20algorithm%20for%20generating,is%20chosen%20for%20that%20pixel.)
 >	* [Plotting algorithms for the Mandelbrot set](https://en.wikipedia.org/wiki/Plotting_algorithms_for_the_Mandelbrot_set)
