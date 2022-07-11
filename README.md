@@ -30,6 +30,8 @@ In this project, we propose to reorganize a computationally intensive kernel in 
 >	* [OpenACC for Mandelbrot set](/Kokkos-tutorial/learn-by-example/code/handson/3/mandelbrot_kokkos/doc/advanced-openacc-techniques.pdf)
 >* Introduction to finite difference and wave equation 
 >	* [Wave equation](https://en.wikipedia.org/wiki/Wave_equation)
+> 	* [Seismic wave equation](/notes/EPS203_L11.pdf)
+>		* [Seismic Wave Motion Animations (4 waves)](https://www.iris.edu/hq/inclass/animation/seismic_wave_motions4_waves_animated)
 >	* [Simulation of waves on a string](http://hplgit.github.io/num-methods-for-PDEs/doc/pub/wave/html/._wave001.html#wave:string)
 >	* [Solving the wave equation in 1D](https://wiki.seg.org/wiki/Solving_the_wave_equation_in_1D)
 >	* [Computational Seismology -- Finite difference](/notes/Lecture03.pdf)
