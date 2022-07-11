@@ -29,10 +29,10 @@ In this project, we propose to reorganize a computationally intensive kernel in 
 >	* [Plotting algorithms for the Mandelbrot set](https://en.wikipedia.org/wiki/Plotting_algorithms_for_the_Mandelbrot_set)
 >	* [OpenACC for Mandelbrot set](/Kokkos-tutorial/learn-by-example/code/handson/3/mandelbrot_kokkos/doc/advanced-openacc-techniques.pdf)
 >* Introduction to finite difference and wave equation 
->	*[Wave equation](https://en.wikipedia.org/wiki/Wave_equation)
->	*[Simulation of waves on a string](http://hplgit.github.io/num-methods-for-PDEs/doc/pub/wave/html/._wave001.html#wave:string)
->	*[Solving the wave equation in 1D](https://wiki.seg.org/wiki/Solving_the_wave_equation_in_1D)
->	*[Computational Seismology -- Finite difference](/notes/Lecture03.pdf)
+>	* [Wave equation](https://en.wikipedia.org/wiki/Wave_equation)
+>	* [Simulation of waves on a string](http://hplgit.github.io/num-methods-for-PDEs/doc/pub/wave/html/._wave001.html#wave:string)
+>	* [Solving the wave equation in 1D](https://wiki.seg.org/wiki/Solving_the_wave_equation_in_1D)
+>	* [Computational Seismology -- Finite difference](/notes/Lecture03.pdf)
 
 ## Working log
 >* [Entrance](https://docs.google.com/presentation/d/1HhAPIeLVFGljRR52KogsXN_SRYyyrFbmcD36ymoxWTg/edit?usp=sharing)
