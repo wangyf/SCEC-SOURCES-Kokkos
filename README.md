@@ -31,7 +31,7 @@ In this project, we propose to reorganize a computationally intensive kernel in 
 >* Introduction to finite difference and wave equation 
 >	*[Wave equation](https://en.wikipedia.org/wiki/Wave_equation)
 >	*[Simulation of waves on a string](http://hplgit.github.io/num-methods-for-PDEs/doc/pub/wave/html/._wave001.html#wave:string)
->	*[Solving the wave equation in 1D](https://wiki.seg.org/wiki/Solving_the_wave_equation_in_1D#:~:text=The%20wave%20equation%20in%20one,u%20%E2%88%82%20x%202%20(eq.)
+>	*[Solving the wave equation in 1D](https://wiki.seg.org/wiki/Solving_the_wave_equation_in_1D)
 >	*[Computational Seismology -- Finite difference](/notes/Lecture03.pdf)
 
 ## Working log
