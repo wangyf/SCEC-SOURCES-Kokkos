@@ -28,6 +28,7 @@ In this project, we propose to reorganize a computationally intensive kernel in 
 >	* [Algorithm for Mandelbrot set](https://complex-analysis.com/content/mandelbrot_set.html#:~:text=The%20simplest%20algorithm%20for%20generating,is%20chosen%20for%20that%20pixel.)
 >	* [Plotting algorithms for the Mandelbrot set](https://en.wikipedia.org/wiki/Plotting_algorithms_for_the_Mandelbrot_set)
 >	* [OpenACC for Mandelbrot set](/Kokkos-tutorial/learn-by-example/code/handson/3/mandelbrot_kokkos/doc/advanced-openacc-techniques.pdf)
+>* [Finite difference for wave equation](http://hplgit.github.io/num-methods-for-PDEs/doc/pub/wave/html/._wave001.html#wave:string)
 
 ## Working log
 >* [Entrance](https://docs.google.com/presentation/d/1HhAPIeLVFGljRR52KogsXN_SRYyyrFbmcD36ymoxWTg/edit?usp=sharing)
