@@ -39,7 +39,7 @@ In this project, we propose to reorganize a computationally intensive kernel in 
 
 ## Useful links
 ### Kokkos programming model
-> -	[Kokkos Wiki](https://github.com/kokkos/kokkos/wiki/The-Kokkos-Programming-Guide)
+> -	[Kokkos Wiki](https://kokkos.github.io/kokkos-core-wiki/index.html)
 
 ### Kokkos online lectures:
 > * [Module-1: Introduction, building and parallel dispatch](https://youtu.be/rUIcWtFU5qM)
