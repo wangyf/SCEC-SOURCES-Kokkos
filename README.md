@@ -45,6 +45,11 @@ In this project, we propose to reorganize a computationally intensive kernel in 
 > * [Module-1: Introduction, building and parallel dispatch](https://youtu.be/rUIcWtFU5qM)
 > * [Module-2: Views and spaces](https://youtu.be/O-asHTtO7O4)
 > * [Module-3: MultiDimensional Loops and Data Structures](https://youtu.be/nGyJS8u-6GY)
+> * [Module-4: Hierarchical Parallelism](https://youtu.be/s9ecpeWRePs)
+> * [Module-5: SIMD, Steams and Tasking](https://youtu.be/xEAyOod57-c)
+> * [Module-6: Fortran/Python Interoperability, MPI and PGAS](https://youtu.be/1J3JQ3d3cRc)
+> * [Module-7: Kokkos Tools](https://youtu.be/MH6zFYGw0HU)
+> * [Module-8: Kernels: Sparse and Dense Linear Algebra](https://youtu.be/_qD4X66MQF8)
 
 ### Markdown:
 > * [basic syntax](https://www.markdownguide.org/basic-syntax/)
