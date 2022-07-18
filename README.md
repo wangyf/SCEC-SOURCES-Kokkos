@@ -35,6 +35,12 @@ In this project, we propose to reorganize a computationally intensive kernel in 
 >	* [Simulation of waves on a string](http://hplgit.github.io/num-methods-for-PDEs/doc/pub/wave/html/._wave001.html#wave:string)
 >	* [Solving the wave equation in 1D](https://wiki.seg.org/wiki/Solving_the_wave_equation_in_1D)
 >	* [Computational Seismology -- Finite difference](/notes/Lecture03.pdf)
+>* Introduction to MPI (Message Passing Interface)
+>	* [Brief intro](https://www.psc.edu/wp-content/uploads/2021/06/Intro-to-MPI.pdf)
+>	* [Tutorial](https://mpitutorial.com/tutorials/)
+>* Jacobi Solver (for Ax=b)
+>	* [Algorithm](/notes/Project-Jocobi.pdf)
+>	* [OpenACC and GPU](/notes/Advanced-OpenACC-Course-Lecture2--Multi-GPU-20160602.pdf)
 
 ## Working log
 >* [Entrance](https://docs.google.com/presentation/d/1HhAPIeLVFGljRR52KogsXN_SRYyyrFbmcD36ymoxWTg/edit?usp=sharing)
