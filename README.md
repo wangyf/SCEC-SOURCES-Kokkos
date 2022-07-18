@@ -39,7 +39,7 @@ In this project, we propose to reorganize a computationally intensive kernel in 
 >	* [Brief intro](https://www.psc.edu/wp-content/uploads/2021/06/Intro-to-MPI.pdf)
 >	* [Tutorial](https://mpitutorial.com/tutorials/)
 >* Jacobi Solver (for Ax=b)
->	* [Algorithm](/notes/Project-Jocobi.pdf)
+>	* [Algorithm](/notes/EPS203_L11.pdf)
 >	* [OpenACC and GPU](/notes/Advanced-OpenACC-Course-Lecture2--Multi-GPU-20160602.pdf)
 
 ## Working log
