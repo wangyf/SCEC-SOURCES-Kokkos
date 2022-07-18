@@ -37,3 +37,5 @@ export OMP_PLACES=threads
 export OMP_NUM_THREADS=10
 ./04_Exercise
 ```
+
+* keep in mind that kokkos should be built on --std=c++14 and later
